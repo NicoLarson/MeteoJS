@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Météo</title>
+    <title>Weather JS</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -12,24 +12,39 @@
 
 <body>
     <header>
-        <h1>Météo</h1>
+        <h1>Weather</h1>
+        <a href="https://nicolasyang.fr"><i class="fas fa-rainbow"></i></a>
+            
+        
     </header>
     <main>
         <section>
-            <h2>Quelle temps fait-il?</h2>
-           <div>
-                <input type="text" placeholder="Paris"> <button><i class="fas fa-search"></i></button>
-           </div>
-            <p></p>
+            <h2>CITY</h2>
+            <div>
+                <input type="text" placeholder="Somewhere"> <button><i class="fas fa-search"></i></button>
+
+            </div>
         </section>
-        <section>
-            <h2>Dans 3h</h2>
-            <p></p>
-        </section>
-        <section>
-            <h2>Demain</h2>
-            <p></p>
-        </section>
+        <div>
+            <section>
+                <h2>Now</h2>
+                <p><img src="https://openweathermap.org/img/wn/01d.png" alt=""><br>
+                    <i class="fas fa-thermometer-half"></i><br>
+                    <i class="fas fa-wind"></i></p>
+            </section>
+            <section>
+                <h2>In 3h</h2>
+                <p><img src="https://openweathermap.org/img/wn/02d.png" alt=""><br>
+                    <i class="fas fa-thermometer-half"></i> <br>
+                    <i class="fas fa-wind"></i> </p>
+            </section>
+            <section>
+                <h2>Tomorrow</h2>
+                <p><img src="https://openweathermap.org/img/wn/01d.png" alt=""><br>
+                    <i class="fas fa-thermometer-half"></i> <br>
+                    <i class="fas fa-wind"></i> </p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; Copyright 2020 Nicolas Yang</p>
