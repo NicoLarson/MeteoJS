@@ -1,1 +1,4 @@
-# MeteoJS
+# App Météo JS
+
+## API 
+openweathermap.org
