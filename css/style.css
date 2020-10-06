@@ -1,0 +1,84 @@
+:root {
+  --color-background-black: #222;
+  --color-font-white: #fafafa;
+  --color-background-h2: #222;
+  --color-font-h2: #fafafa;
+  --color-background-main: #222;
+  --color-background-section-meteo: #fafafa;
+  --color-font-meteo: #222;
+  --color-border:#bdc3c7;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+header {
+  background-color: var(--color-background-black);
+  padding: 2rem;
+}
+header h1 {
+  color: var(--color-font-white);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.2rem;
+}
+main {
+  padding: .8rem;
+}
+main section {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+main section h2 {
+  text-align: center;
+}
+main section div {
+  display: flex;
+margin: .8rem;
+}
+main section input {
+  max-width: 80%;
+  border:1px solid var(--color-border) ;
+  border-right: none;
+  border-radius: .4rem 0 0 .4rem;
+  padding: .4rem .4rem .4rem .8rem;
+
+}
+main section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  width: 8rem;
+  background-color: #3498db;
+  border:1px solid var(--color-border) ;
+  border-left: none;
+  border-radius: 0 .4rem .4rem 0;
+}
+main section button:hover{
+  transition: .2s;
+  transform: scale(1.04);
+}
+main section button:active{
+  transition: .2s;
+  transform: scale(0.98);
+}
+main section button i {
+  font-size: 1.6rem;
+  color: var(--color-font-white);
+}
+main section p {
+  text-align: center;
+}
+footer {
+  background-color: var(--color-background-black);
+}
+footer p {
+  color: var(--color-font-white);
+  padding: 2rem;
+}
