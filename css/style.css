@@ -14,8 +14,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background: linear-gradient(to right, #2980b9, #3498db, #ecf0f1);
+  height: 100%;
+  background: linear-gradient(to right,#22c1c3,#fdbb2d);
 }
 header {
   display: flex;
@@ -29,7 +29,7 @@ header h1 {
   text-align: center;
   font-size: 3.2rem;
 }
-header i{
+header i {
   color: var(--color-font-white);
   font-size: 4rem;
 }
@@ -40,16 +40,24 @@ main {
 main section {
   margin: 2rem auto 0;
 }
-main>div {
+main > div {
   display: flex;
   flex-wrap: wrap;
 }
-main div section{
- padding: 2rem;
+main div section {
+  padding: 2rem;
 }
 main section h2 {
   text-align: center;
   font-size: 2rem;
+}
+main > div {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+main > section > div {
+  margin-bottom: 2rem;
 }
 main section div input {
   max-width: 80%;
@@ -100,4 +108,11 @@ footer {
 footer p {
   color: var(--color-font-white);
   padding: 2rem;
+}
+
+@media (min-width: 600px) {
+  main > div {
+    max-width: 60%;
+    margin: 0 auto;
+  }
 }
